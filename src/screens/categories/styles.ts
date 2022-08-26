@@ -3,9 +3,12 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    justifyContent: "center",
   },
-  image: {
-    height: "100%",
+  background: {
+    flex: 1,
+    width: "100%",
+    justifyContent: "center",
+    paddingTop: 20,
   },
 });

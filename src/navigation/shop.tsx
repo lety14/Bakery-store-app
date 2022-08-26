@@ -25,9 +25,9 @@ const ShopNavigator = () => {
       initialRouteName="Home"
       screenOptions={{
         headerStyle: {
-          backgroundColor: isAndroid ? colors.primary : colors.secondary,
+          backgroundColor: colors.black,
         },
-        headerTintColor: isAndroid ? colors.text : colors.textLight,
+        headerTintColor: colors.white,
         headerTitleStyle: {
           fontFamily: "quicksand-bold",
         },

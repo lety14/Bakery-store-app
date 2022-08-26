@@ -20,7 +20,12 @@ const Categories = ({ navigation }: CategoriesProps) => {
 
   return (
     <View style={styles.container}>
-      <FlatList data={CATEGORIES} renderItem={renderItem} keyExtractor={keyExtractor} />
+      <ImageBackground
+        source={require("../../../assets/background-home.jpg")}
+        style={styles.background}
+        resizeMode="stretch">
+        <FlatList data={CATEGORIES} renderItem={renderItem} keyExtractor={keyExtractor} />
+      </ImageBackground>
     </View>
   );
 };
