@@ -1,7 +1,7 @@
 export const PRODUCTS = [
   {
     id: 1,
-    category: 1,
+    categoryId: 1,
     name: "Pan de Molde",
     price: 1.5,
     description: "Pan de molde de masa madre",
@@ -9,7 +9,7 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    category: 1,
+    categoryId: 1,
     name: "Pan de Yema",
     price: 1.5,
     description: "Pan de Yema de masa madre",
@@ -17,7 +17,7 @@ export const PRODUCTS = [
   },
   {
     id: 3,
-    category: 2,
+    categoryId: 2,
     name: "Pan de Molde Integral",
     price: 1.5,
     description: "Pan de molde integral masa madre",
@@ -25,7 +25,7 @@ export const PRODUCTS = [
   },
   {
     id: 4,
-    category: 2,
+    categoryId: 2,
     name: "Pan de Yema Integral",
     price: 1.5,
     description: "Pan de Yema integral de masa madre",
@@ -33,7 +33,7 @@ export const PRODUCTS = [
   },
   {
     id: 5,
-    category: 3,
+    categoryId: 3,
     name: "Pan de Molde de Trigo",
     price: 1.5,
     description: "Pan de molde de trigo de masa madre",
@@ -41,7 +41,7 @@ export const PRODUCTS = [
   },
   {
     id: 6,
-    category: 3,
+    categoryId: 3,
     name: "Pan de Yema de Trigo",
     price: 1.5,
     description: "Pan de Yema de trigo de masa madre",
@@ -49,7 +49,7 @@ export const PRODUCTS = [
   },
   {
     id: 7,
-    category: 4,
+    categoryId: 4,
     name: "Pan de Molde de Maíz",
     price: 1.5,
     description: "Pan de molde de maíz de masa madre",
@@ -57,7 +57,7 @@ export const PRODUCTS = [
   },
   {
     id: 8,
-    category: 4,
+    categoryId: 4,
     name: "Pan de Yema de Maíz",
     price: 1.5,
     description: "Pan de Yema de maíz de masa madre",
@@ -65,7 +65,7 @@ export const PRODUCTS = [
   },
   {
     id: 9,
-    category: 5,
+    categoryId: 5,
     name: "Pan de Molde de Arroz",
     price: 1.5,
     description: "Pan de molde de arroz de masa madre",
@@ -73,7 +73,7 @@ export const PRODUCTS = [
   },
   {
     id: 10,
-    category: 5,
+    categoryId: 5,
     name: "Pan de Yema de Arroz",
     price: 1.5,
     description: "Pan de Yema de arroz de masa madre",

@@ -1,7 +1,7 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React from "react";
 import { Image, ImageBackground, Text, View } from "react-native";
-import ButttomCustom from "../../components/button-custom";
+import { ButtonCustom } from "../../components";
 import FadeIn from "../../components/fadeInView";
 import { RootStackParamList } from "../../navigation/shop";
 import { styles } from "./styles";
@@ -19,7 +19,7 @@ const Home = ({ navigation }: HomeProps) => {
           <Image style={styles.logo} source={require("../../../assets/bakery.png")} />
         </FadeIn>
         <FadeIn delay={1000}>
-          <ButttomCustom title="Ver categorias" onPress={() => navigation.navigate("Categories")} />
+          <ButtonCustom title="Ver categorias" onPress={() => navigation.navigate("Categories")} />
         </FadeIn>
       </ImageBackground>
     </View>

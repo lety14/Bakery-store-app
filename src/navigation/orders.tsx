@@ -24,7 +24,7 @@ const OrdersNavigator = () => {
         },
         headerTitleAlign: "center",
       }}>
-      <Stack.Screen name="Orders" component={OrdersScreen} />
+      <Stack.Screen name="Orders" component={OrdersScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 };

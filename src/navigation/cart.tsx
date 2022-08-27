@@ -24,7 +24,7 @@ const CartNavigator = () => {
         },
         headerTitleAlign: "center",
       }}>
-      <Stack.Screen name="Cart" component={CartScreen} />
+      <Stack.Screen name="Cart" component={CartScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 };

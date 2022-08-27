@@ -1,14 +1,10 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../constants/colors.constants";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-  },
-  background: {
-    flex: 1,
-    width: "100%",
-    justifyContent: "center",
-    paddingTop: 20,
+    backgroundColor: colors.white,
   },
 });

@@ -6,8 +6,9 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     borderRadius: 10,
-    margin: 20,
-    height: 180,
+    margin: 10,
+    marginHorizontal: 20,
+    height: 120,
   },
   containerTouchable: {
     flex: 1,

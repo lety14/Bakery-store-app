@@ -1,20 +1,20 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../constants/colors.constants";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    backgroundColor: colors.white,
+    padding: 20,
   },
-  background: {
+  title: {
+    alignSelf: "flex-start",
+    fontFamily: "quicksand-bold",
+    fontSize: 25,
+    paddingVertical: 10,
+    paddingBottom: 30,
+  },
+  orderList: {
     flex: 1,
-    width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  logo: {
-    width: 190,
-    height: 190,
-    marginBottom: 80,
-    alignSelf: "center",
   },
 });

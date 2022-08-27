@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   containerTouchable: {
     flex: 1,
     borderRadius: 8,
-    backgroundColor: "rgba(0,0,0,0.08)",
+    backgroundColor: colors.secondary,
     borderColor: "rgba(0,0,0,0.2)",
     borderWidth: 1,
     justifyContent: "center",

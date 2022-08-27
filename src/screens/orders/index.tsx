@@ -1,17 +1,29 @@
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React from "react";
-import { Image, ImageBackground, Text, View } from "react-native";
-import ButttomCustom from "../../components/button-custom";
-import FadeIn from "../../components/fadeInView";
-import { OrdersStackParamList } from "../../navigation/orders";
+import { FlatList, Text, View } from "react-native";
+import { OrderItem } from "../../components";
+import { ORDERS } from "../../constants/data/orders.constants";
+import IOrderItem from "../../types/IOrdertem.type";
 import { styles } from "./styles";
 
-type OrdersProps = NativeStackScreenProps<OrdersStackParamList, "Orders">;
+const Orders = () => {
+  const items = ORDERS;
 
-const Orders = ({ navigation }: OrdersProps) => {
+  const onHandleDelete = (id: number) => {
+    console.warn(`Delete ${id}`);
+  };
+
+  const keyExtractor = (item: IOrderItem) => item.id.toString();
+
+  const renderItem = ({ item }: { item: IOrderItem }) => (
+    <OrderItem item={item} onDelete={onHandleDelete} />
+  );
+
   return (
     <View style={styles.container}>
-      <Text>ORDERS</Text>
+      <Text style={styles.title}>Mis Ordenes</Text>
+      <View style={styles.orderList}>
+        <FlatList data={items} keyExtractor={keyExtractor} renderItem={renderItem} />
+      </View>
     </View>
   );
 };
