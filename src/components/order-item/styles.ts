@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   headerContainer: {},
   header: {
     fontSize: 16,
-    fontFamily: "quicksand-semibold",
+    fontFamily: "mabry",
   },
   containerDetail: {
     flex: 1,
@@ -24,6 +24,6 @@ export const styles = StyleSheet.create({
   detail: {},
   detailTotal: {
     fontSize: 14,
-    fontFamily: "quicksand-regular",
+    fontFamily: "mabry",
   },
 });

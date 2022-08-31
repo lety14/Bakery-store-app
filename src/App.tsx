@@ -1,9 +1,9 @@
-import { useFonts } from "expo-font";
 import React from "react";
-import { ActivityIndicator, ScrollViewBase, StatusBar } from "react-native";
+import { ActivityIndicator, StatusBar } from "react-native";
+import { Provider } from "react-redux";
 import useFontsLoaded from "./hooks/useFontsLoaded";
 import AppNavigator from "./navigation";
-import Categories from "./screens/categories";
+import store from "./store/store";
 
 export default function App() {
   const loaded = useFontsLoaded();
@@ -13,8 +13,10 @@ export default function App() {
   }
   return (
     <>
-      <AppNavigator />
-      <StatusBar hidden />
+      <Provider store={store}>
+        <AppNavigator />
+        <StatusBar hidden />
+      </Provider>
     </>
   );
 }

@@ -4,32 +4,38 @@ import { colors } from "../../constants/colors.constants";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginVertical: 8,
-    backgroundColor: "#f2f2f2",
-    padding: 10,
-    shadowColor: colors.black,
-    shadowOpacity: 0.6,
-    shadowOffset: { width: 5, height: 5 },
-    shadowRadius: 10,
-    elevation: 3,
+    borderWidth: 1,
+    borderColor: colors.black,
+    borderRadius: 25,
+    justifyContent: "space-between",
+  },
+  details: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: 15,
   },
   containerTouchable: {
     paddingRight: 10,
   },
   name: {
     fontSize: 22,
-    fontFamily: "quicksand-semibold",
+    fontFamily: "mabry",
     color: colors.text,
     textAlign: "center",
   },
-  product: {
-    fontSize: 18,
-    paddingBottom: 8,
-    fontFamily: "quicksand-bold",
+  qty: {
+    fontFamily: "mabry",
+    fontSize: 12,
   },
-  details: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
+  price: {
+    fontFamily: "mabry",
+    fontSize: 16,
+    paddingTop: 3,
+  },
+  product: {
+    fontSize: 20,
+    paddingBottom: 8,
+    fontFamily: "mabry",
   },
 });
