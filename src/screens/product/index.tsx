@@ -1,23 +1,32 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React from "react";
-import { Text, View } from "react-native";
-import { PRODUCTS } from "../../constants/data/products.constants";
+import { Image, Text, View } from "react-native";
+import { FadeIn } from "../../components";
 import { RootStackParamList } from "../../navigation/shop";
-import IProduct from "../../types/IProduct.type";
+import { useAppSelector } from "../../store/hooks";
 import { styles } from "./styles";
 
 type ProductProps = NativeStackScreenProps<RootStackParamList, "Product">;
 
 const Product = ({ navigation, route }: ProductProps) => {
-  const { productId } = route.params;
-  const product = PRODUCTS.find((product: IProduct) => product.id === productId);
+  const product = useAppSelector((state) => state.products.selected);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.name}>{product?.name}</Text>
-      <Text style={styles.description}>{product?.description}</Text>
-      <Text style={styles.price}>$ {product?.price?.toFixed(2)}</Text>
-      <Text style={styles.weight}>Peso: {product?.weight}</Text>
+      <Image source={product?.image} style={styles.image} />
+      <View style={styles.details}>
+        <Text style={styles.name}>{product?.name}</Text>
+        <FadeIn delay={200}>
+          <Text style={styles.description}>{product?.description}</Text>
+        </FadeIn>
+        <FadeIn delay={400}>
+          <Text style={styles.weight}>Peso: {product?.weight}</Text>
+        </FadeIn>
+
+        <View style={styles.resume}>
+          <Text style={styles.price}>$ {product?.price?.toFixed(2)}</Text>
+        </View>
+      </View>
     </View>
   );
 };

@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   },
   title: {
     alignSelf: "flex-start",
-    fontFamily: "quicksand-bold",
+    fontFamily: "mabry",
     fontSize: 25,
     paddingVertical: 10,
     paddingBottom: 30,

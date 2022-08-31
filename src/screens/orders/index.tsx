@@ -8,9 +8,7 @@ import { styles } from "./styles";
 const Orders = () => {
   const items = ORDERS;
 
-  const onHandleDelete = (id: number) => {
-    console.warn(`Delete ${id}`);
-  };
+  const onHandleDelete = (id: number) => {};
 
   const keyExtractor = (item: IOrderItem) => item.id.toString();
 

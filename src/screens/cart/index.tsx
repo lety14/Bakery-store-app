@@ -22,7 +22,11 @@ const Cart = ({ navigation }: CartProps) => {
   };
 
   const renderItem = ({ item }: { item: ICartItem }): JSX.Element => {
-    return <CartItem item={item} onDelete={handleDelete} />;
+    return (
+      <View style={styles.item}>
+        <CartItem item={item} onDelete={handleDelete} />
+      </View>
+    );
   };
 
   const onHandleConfirm = () => {};
