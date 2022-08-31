@@ -2,7 +2,6 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { CategoriesScreen, HomeScreen, ProductScreen, ProductsScreen } from "../screens";
 import { colors } from "../constants/colors.constants";
-import { isAndroid } from "../utils/platformValidator";
 
 export type RootStackParamList = {
   Home: undefined;
@@ -28,8 +27,9 @@ const ShopNavigator = () => {
           backgroundColor: colors.black,
         },
         headerTintColor: colors.white,
+        headerShadowVisible: false,
         headerTitleStyle: {
-          fontFamily: "quicksand-bold",
+          fontFamily: "mabry",
         },
         headerTitleAlign: "center",
       }}>

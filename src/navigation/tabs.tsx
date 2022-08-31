@@ -1,10 +1,10 @@
-import React, { FC } from "react";
+import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import ShopNavigator from "./shop";
 import OrdersNavigator from "./orders";
 import CartNavigator from "./cart";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
 const Tabs = () => {
   const BottomTab = createBottomTabNavigator();

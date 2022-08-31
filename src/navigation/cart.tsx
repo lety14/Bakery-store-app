@@ -20,7 +20,7 @@ const CartNavigator = () => {
         },
         headerTintColor: isAndroid ? colors.text : colors.textLight,
         headerTitleStyle: {
-          fontFamily: "quicksand-bold",
+          fontFamily: "mabry",
         },
         headerTitleAlign: "center",
       }}>
